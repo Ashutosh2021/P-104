@@ -79,7 +79,7 @@ def finding_mode() :
     mode_occurence = 0 
 
     for range,occurence in mode_data_for_range.items() :
-        if(occurence,mode_occurence):
+        if(occurence>mode_occurence):
             mode_occurence=occurence
             mode_range=[int(range.split("-")[0]),int(range.split("-")[1])]
     
